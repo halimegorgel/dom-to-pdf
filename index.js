@@ -252,11 +252,7 @@ downloadPdf = (dom, options, cb) => {
       cb();
     }
 
-    if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())) {
-      return window.open(pdf.output('bloburl', { filename: filename }))
-    } else {
-      return pdf.save(filename)
-    }
+    return window.open(pdf.output('bloburl', { filename: filename }))
 
   }).catch(error => {
     // Remove overlay
