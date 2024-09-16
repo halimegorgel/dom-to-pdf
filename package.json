@@ -8,10 +8,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ovvn/dom-to-pdf.git"
+    "url": "git+https://github.com/ekiziltas/dom-to-pdf.git"
   },
   "dependencies": {
-    "dom-to-image": "git://github.com/dmapper/dom-to-image",
+    "dom-to-image": "^2.6.0",
     "jspdf": "^1.5.3"
   },
   "keywords": [
@@ -27,13 +27,12 @@
     "page-break"
   ],
   "author": {
-    "name": "Osman Mazinov",
-    "email": "omazinov@gmail.com",
-    "url": "https://ovvn.github.io"
+    "name": "Eray KIZILTAS",
+    "email": "erryan1988@gmail.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ovvn/dom-to-pdf/issues"
+    "url": "https://github.com/ekiziltas/dom-to-pdf/issues"
   },
-  "homepage": "https://github.com/ovvn/dom-to-pdf#readme"
+  "homepage": "https://github.com/ekiziltas/dom-to-pdf#readme"
 }

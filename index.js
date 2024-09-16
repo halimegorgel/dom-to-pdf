@@ -251,7 +251,13 @@ downloadPdf = (dom, options, cb) => {
     if (typeof cb === "function") {
       cb();
     }
-    return pdf.save(filename);
+
+    if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())) {
+      return window.open(pdf.output('bloburl', { filename: filename }))
+    } else {
+      return pdf.save(filename)
+    }
+
   }).catch(error => {
     // Remove overlay
     document.body.removeChild(overlay);
